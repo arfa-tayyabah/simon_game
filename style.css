@@ -9,31 +9,31 @@ body{
     flex-direction: column;
     justify-content: center;
 }
-h2{
-    color: black;
-    text-align: center;
+h2 {
+    color: rgb(0, 0, 0);
+    font-size: 65px;
+    font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
-    font-weight: bolder;
-    font-size: 60px;
-    margin-top: 0;
     text-align: center;
+    margin: 20px 0 40px 0;
+    letter-spacing: 4px;
 }
 .game{
-    height: 450px;
+    height: 470px;
     width: 450px;    
-    border-radius: 50%;
+    border-radius: 55%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
     background: radial-gradient(circle, #ffffff 10%, #000000 40%, #000000 100%);
-    transform: rotateX(40deg); 
+    transform: rotateX(35deg); 
     box-shadow: 
         inset 0 10px 20px rgba(48, 45, 45, 0.1),
         0 5px 0 #000, 
         0 10px 0 #000, 
         0 15px 0 #000000, 
-        0 10px 30px rgba(0,0,0,0.5);    
+        0 10px 10px rgba(0,0,0,0.5);    
 }
 button{
     background-color: rgb(222, 26, 26);
@@ -44,14 +44,15 @@ button:hover{
     filter: brightness(0.9);
 }
 button:active, button.active {
+    filter: brightness(2);
+    box-shadow: 0 0 40px white;
     transform: scale(0.95);
-    filter: brightness(0.8);
 }
 #red{
     background-color: rgb(222, 26, 26);
     border-radius: 730px 0px 0px 5px;
     position: relative;
-    top: 20px;
+    top: 10px;
     left: 18px;
     height: 200px;
     width: 205px;
@@ -60,7 +61,7 @@ button:active, button.active {
     background-color: rgb(5, 164, 29);
     border-radius: 0px 730px 0px 0px;
     position: relative;
-    top: 20px;
+    top: 10px;
     left: 5px;
     height: 200px;
     width: 205px;
@@ -82,4 +83,51 @@ button:active, button.active {
     position: relative;
     top: 10px;
     left: 6px; 
+}
+#start {
+    margin-bottom: 30px;
+}
+
+#game-screen {
+    display: none;
+}
+
+#game-screen.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#play {
+    padding: 20px 60px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    background-color: #3b9e02;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease;
+    margin-top: 30px;
+}
+
+#play:hover {
+    background-color: #00ad1a;
+    transform: scale(1.1);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+}
+
+#play:active {
+    transform: scale(0.95);
+}
+.hidden {
+    display: none;
 }

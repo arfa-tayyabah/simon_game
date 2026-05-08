@@ -6,13 +6,21 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h2>Simon Game</h2>
+    <h2>Simon Game</h2>
+    
+    <div id="start">
+        <button id="play">PLAY</button>
+    </div>
+
+    <div id="game-screen" class="hidden">
         <div class="game">
-            <button id="red"></button>
-            <button id="green"></button>
-            <button id="yellow"></button>
-            <button id="blue"></button>
+            <button class="color-btn" id="red"></button>
+            <button class="color-btn" id="green"></button>
+            <button class="color-btn" id="yellow"></button>
+            <button class="color-btn" id="blue"></button>
         </div>
-        <script src="game.js"></script>
-    </body>
+    </div>
+
+    <script src="game.js"></script>
+</body>
 </html>
