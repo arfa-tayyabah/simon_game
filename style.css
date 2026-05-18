@@ -131,3 +131,14 @@ button:active, button.active {
 .hidden {
     display: none;
 }
+#level-display {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    position: fixed;
+    top: 150px;
+    right: 40px;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+}
